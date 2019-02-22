@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:fillAfter="true">
+
+    <translate android:fromXDelta="-100%"
+               android:toXDelta="0%"
+               android:fromYDelta="0%"
+               android:toYDelta="0%"
+               android:duration="700"/>
+
+    <!--fromYDelta-->
+    <!--Iniciando o deslocamento Y Expresso: em pixels em relação à posição normal-->
+    <!--(como "5"), em porcentagem em relação à altura do elemento (como "5%") -->
+    <!--ou em porcentagem em relação à altura pai (como "5% p" ).-->
+
+    <!--toXDelta-->
+    <!--Terminando o deslocamento X. Expresso: em pixels em relação à posição normal (como "5"),-->
+    <!--em porcentagem em relação à largura do elemento (como "5%") ou em porcentagem em relação à largura pai (como "5% p" ).-->
+
+    <!--fromYDelta-->
+    <!--Iniciando o deslocamento Y Expresso: em pixels em relação à posição normal-->
+    <!--(como "5"), em porcentagem em relação à altura do elemento (como "5%") -->
+    <!--ou em porcentagem em relação à altura pai (como "5% p" ).-->
+
+    <!--toYDelta-->
+    <!--Fim do deslocamento Y Expresso: em pixels em relação à posição normal (como "5"),-->
+    <!--em porcentagem em relação à altura do elemento (como "5%") ou em porcentagem em relação à altura pai (como "5% p" ).-->
+
+
+</set>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Jera Animation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="enter">ENTRAR</string>
+    <string name="text_go">Go!</string>
+    <string name="search_title">Procurando por uma empresa de desenvolvimento? \nparabéns você acabou de encontrar a Jera</string>
+    <string name="star_body">Aqui realizaremos seu sonho com um app 5 estrelas</string>
+    <string name="check_body">Vamos Começar?</string>
+</resources>

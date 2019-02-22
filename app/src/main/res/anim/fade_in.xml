@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:fillAfter="true">
+
+    <alpha
+            android:duration="4000"
+            android:fromAlpha="0.0"
+            android:interpolator="@android:anim/accelerate_interpolator"
+            android:toAlpha="1.0"/>
+
+    <!--fromAlpha-->
+    <!--Começa o deslocamento de opacidade, onde 0.0 é transparente e 1.0 é opaco.-->
+
+    <!--interpolator-->
+    <!--Um interpolador define a taxa de mudança de uma animação. -->
+    <!--Isso permite que os efeitos básicos de animação (alfa, escala, translação, rotação) -->
+    <!--sejam acelerados, desacelerados, repetidos etc.-->
+
+    <!--toAlpha-->
+    <!--Deslocamento de opacidade final, onde 0.0 é transparente e 1.0 é opaco.-->
+
+</set>
