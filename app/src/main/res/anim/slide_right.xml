@@ -3,12 +3,10 @@
      android:fillAfter="true">
 
     <translate android:fromXDelta="-100%"
-               android:toXDelta="100%"
+               android:toXDelta="0%"
                android:fromYDelta="0%"
                android:toYDelta="0%"
-               android:duration="700"
-               android:repeatCount="infinite"
-               android:repeatMode="reverse"/>
+               android:duration="700"/>
 
     <!--fromYDelta-->
     <!--Iniciando o deslocamento Y Expresso: em pixels em relação à posição normal-->
