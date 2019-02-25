@@ -26,6 +26,15 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         changeFragment(FragmentType.HOME)
     }
 
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.navigation_home -> changeFragment(FragmentType.HOME)
+            R.id.navigation_dashboard -> changeFragment(FragmentType.DASHBOARD)
+            R.id.navigation_notifications -> changeFragment(FragmentType.NOTIFICATION)
+        }
+        return true
+    }
+
     private fun setAnimationNavigation() {
         AnimationUtils.loadAnimation(applicationContext, R.anim.slide_up).run {
             binding.navigation.startAnimation(this)
@@ -37,7 +46,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         supportFragmentManager.beginTransaction()
             .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
             .replace(R.id.fragment_container, baseFragment, tag.name)
-            .addToBackStack(FragmentType.HOME.name)
             .commit()
     }
 
@@ -47,14 +55,5 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             FragmentType.DASHBOARD -> DashboardFragment()
             FragmentType.NOTIFICATION -> NotificationFragment()
         }
-    }
-
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.navigation_home -> changeFragment(FragmentType.HOME)
-            R.id.navigation_dashboard -> changeFragment(FragmentType.DASHBOARD)
-            R.id.navigation_notifications -> changeFragment(FragmentType.NOTIFICATION)
-        }
-        return true
     }
 }

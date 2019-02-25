@@ -8,25 +8,5 @@
             android:pivotX="50%"
             android:pivotY="50%"
             android:toXScale="3"
-            android:toYScale="3" >
-    </scale>
-
-    <!--fromXScale-->
-    <!--Começando o deslocamento do tamanho X, onde 1.0 não é alterado.-->
-
-    <!--fromYScale-->
-    <!--Começando o deslocamento do tamanho Y, onde 1.0 não é alterado.-->
-
-    <!--pivotX-->
-    <!--Flutuador. A coordenada X permanece fixa quando o objeto é dimensionado.-->
-
-    <!--pivotY-->
-    <!--A coordenada Y permanece fixa quando o objeto é dimensionado.-->
-
-    <!--toXScale-->
-    <!--Deslocamento do tamanho X final, onde 1.0 não é alterado.-->
-
-    <!--toYScale-->
-    <!--Flutuador. Deslocamento do tamanho final Y, em que 1.0 não é alterado.-->
-
+            android:toYScale="3"/>
 </set>
