@@ -26,7 +26,8 @@
             android:fromYDelta="0%p"
             android:toYDelta="10%p"
             android:duration="1000"
-            android:startOffset="0" android:repeatMode="reverse"
+            android:startOffset="0"
+            android:repeatMode="reverse"
             android:repeatCount="infinite"
            >
     </translate>
@@ -47,6 +48,6 @@
     <!--Define quantas vezes a animação deve se repetir.-->
 
     <!--repeatMode-->
-    <!--Defines the animation behavior when it reaches the end and the repeat count is greater than 0 or infinite.-->
+    <!--Defines the animation_recycle_view behavior when it reaches the end and the repeat count is greater than 0 or infinite.-->
 
 </set>

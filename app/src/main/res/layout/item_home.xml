@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="5dp"
+                card_view:contentPadding="10dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="23sp"
+                        tools:text="Beer plus"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/margin_16dp"/>
+
+                <TextView
+                        android:id="@+id/body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Compre nos estabelecimentos parceiros da Beblue e tenha o seu dinheiro de volta a cada compra realizada"
+                        android:textColor="@android:color/black"
+                        android:layout_below="@id/project"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="1dp"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</layout>
