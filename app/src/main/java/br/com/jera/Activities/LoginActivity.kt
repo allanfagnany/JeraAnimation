@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun animateLayout() {
-        AnimationUtils.loadAnimation(applicationContext, R.anim.fade_in).run {
+        AnimationUtils.loadAnimation(applicationContext, R.anim.slide_down).run {
             binding.brandLogo.startAnimation(this)
         }
         AnimationUtils.loadAnimation(applicationContext, R.anim.slide_up_no_bounce).run {
