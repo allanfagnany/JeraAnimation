@@ -1,18 +1,18 @@
-package br.com.jeraanimation.fragments
+package br.com.animation.fragments
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import br.com.jeraanimation.databinding.FragmentHomeBinding
+import br.com.animation.databinding.FragmentDashboardBinding
 
-class HomeFragment : Fragment() {
+class DashboardFragment : Fragment() {
 
-    lateinit var binding: FragmentHomeBinding
+    lateinit var binding: FragmentDashboardBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding = FragmentDashboardBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

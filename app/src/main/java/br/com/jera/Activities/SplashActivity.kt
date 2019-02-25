@@ -1,14 +1,13 @@
-package br.com.jeraanimation.Activities
+package br.com.animation.Activities
 
 import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.animation.AnimationUtils
-import br.com.jeraanimation.R
-import br.com.jeraanimation.databinding.ActivitySplashBinding
-import br.com.jeraanimation.util.scheduleCallback
-
+import br.com.animation.R
+import br.com.animation.databinding.ActivitySplashBinding
+import br.com.animation.util.scheduleCallback
 
 class SplashActivity : AppCompatActivity() {
 
@@ -25,15 +24,13 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun setAnimationImageView() {
-        AnimationUtils.loadAnimation(applicationContext, R.anim.gravity).apply {
+        AnimationUtils.loadAnimation(applicationContext, R.anim.gravity).run {
             binding.robotImageView.startAnimation(this)
         }
         scheduleCallback(::goToStart, DEFAULT_TIME_IN_SEC)
     }
 
     private fun goToStart() {
-        Intent(this, TutorialActivity::class.java).apply {
-            startActivity(this)
-        }
+        Intent(this, TutorialActivity::class.java).run { startActivity(this) }
     }
 }

@@ -33,7 +33,7 @@
                     android:textAlignment="center"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
-                    tools:text="damn right"/>
+                    tools:text="body"/>
 
         </LinearLayout>
 

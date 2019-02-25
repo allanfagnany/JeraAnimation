@@ -1,4 +1,4 @@
-package br.com.jeraanimation.fragments
+package br.com.animation.fragments
 
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -8,10 +8,10 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import br.com.jeraanimation.Activities.LoginActivity
-import br.com.jeraanimation.databinding.FragmentTutorialBinding
-import br.com.jeraanimation.util.Constants
-import br.com.jeraanimation.util.setVisibility
+import br.com.animation.Activities.LoginActivity
+import br.com.animation.databinding.FragmentTutorialBinding
+import br.com.animation.util.Constants
+import br.com.animation.util.setVisibility
 
 class TutorialFragment : Fragment() {
 

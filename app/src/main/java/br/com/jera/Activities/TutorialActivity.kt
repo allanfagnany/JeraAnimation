@@ -1,11 +1,11 @@
-package br.com.jeraanimation.Activities
+package br.com.animation.Activities
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import br.com.jeraanimation.R
-import br.com.jeraanimation.adapters.TutorialAdapter
-import br.com.jeraanimation.databinding.ActivityTutorialBinding
+import br.com.animation.R
+import br.com.animation.adapters.TutorialAdapter
+import br.com.animation.databinding.ActivityTutorialBinding
 
 class TutorialActivity : AppCompatActivity() {
 

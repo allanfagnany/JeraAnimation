@@ -1,4 +1,4 @@
-package br.com.jeraanimation.Activities
+package br.com.animation.Activities
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -7,15 +7,14 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import android.view.animation.AnimationUtils
-import br.com.jeraanimation.R
-import br.com.jeraanimation.databinding.ActivityMainBinding
-import br.com.jeraanimation.fragments.DashboardFragment
-import br.com.jeraanimation.fragments.HomeFragment
-import br.com.jeraanimation.fragments.NotificationFragment
-import br.com.jeraanimation.util.FragmentType
+import br.com.animation.R
+import br.com.animation.databinding.ActivityMainBinding
+import br.com.animation.fragments.DashboardFragment
+import br.com.animation.fragments.HomeFragment
+import br.com.animation.fragments.NotificationFragment
+import br.com.animation.util.FragmentType
 
-class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener,
-    BottomNavigationView.OnNavigationItemReselectedListener {
+class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener{
 
     private lateinit var binding: ActivityMainBinding
 
@@ -28,7 +27,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     }
 
     private fun setAnimationNavigation() {
-        AnimationUtils.loadAnimation(applicationContext, R.anim.slide_up).apply {
+        AnimationUtils.loadAnimation(applicationContext, R.anim.slide_up).run {
             binding.navigation.startAnimation(this)
         }
     }
@@ -58,6 +57,4 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         }
         return true
     }
-
-    override fun onNavigationItemReselected(p0: MenuItem) {/* TODO */ }
 }

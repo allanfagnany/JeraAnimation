@@ -1,4 +1,4 @@
-package br.com.jeraanimation.util
+package br.com.animation.util
 
 import android.view.View
 import java.util.*

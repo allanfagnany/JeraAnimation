@@ -1,12 +1,12 @@
-package br.com.jeraanimation.adapters
+package br.com.animation.adapters
 
 import android.content.Context
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import br.com.jeraanimation.R
-import br.com.jeraanimation.fragments.TutorialFragment
-import br.com.jeraanimation.util.Constants
+import br.com.animation.R
+import br.com.animation.fragments.TutorialFragment
+import br.com.animation.util.Constants
 
 class TutorialAdapter(private val context: Context, fragmentManager: FragmentManager) :
     FragmentPagerAdapter(fragmentManager) {

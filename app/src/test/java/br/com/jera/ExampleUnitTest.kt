@@ -1,4 +1,4 @@
-package br.com.jeraanimation
+package br.com.animation
 
 import org.junit.Test
 

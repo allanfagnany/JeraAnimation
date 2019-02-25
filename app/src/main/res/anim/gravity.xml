@@ -26,9 +26,9 @@
             android:fromYDelta="0%p"
             android:toYDelta="10%p"
             android:duration="1000"
-            android:startOffset="0"
+            android:startOffset="0" android:repeatMode="reverse"
             android:repeatCount="infinite"
-            android:repeatMode="reverse">
+           >
     </translate>
 
     <!--fromYDelta-->

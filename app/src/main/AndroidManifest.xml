@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="br.com.jeraanimation">
+          package="br.com.animation">
 
     <application
             android:allowBackup="true"
@@ -11,11 +11,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Activities.TutorialActivity"
+        <activity android:name="br.com.animation.Activities.TutorialActivity"
                   android:screenOrientation="portrait"
                   android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-                android:name=".Activities.SplashActivity"
+                android:name="br.com.animation.Activities.SplashActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -25,11 +25,11 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".Activities.LoginActivity"
+                android:name="br.com.animation.Activities.LoginActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.Status"/>
         <activity
-                android:name=".Activities.MainActivity"
+                android:name="br.com.animation.Activities.MainActivity"
                 android:label="@string/app_name"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.Status"/>

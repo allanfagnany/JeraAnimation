@@ -1,4 +1,4 @@
-package br.com.jeraanimation.util
+package br.com.animation.util
 
 enum class FragmentType(fragmentName: String) {
     HOME("home_fragment"),

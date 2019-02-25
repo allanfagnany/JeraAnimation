@@ -1,4 +1,4 @@
-package br.com.jeraanimation
+package br.com.animation
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
