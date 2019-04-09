@@ -6,24 +6,22 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:animateLayoutChanges="true"
             android:background="@drawable/background_home"
-            app:layoutDescription="@xml/motion_scene_home"
             tools:context=".fragments.HomeFragment">
 
         <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_home"
                 android:layout_width="match_parent"
                 android:background="@color/color_white"
-                android:layout_height="110dp">
-
+                android:layout_marginStart="06dp"
+                android:layout_marginEnd="06dp"
+                android:layout_marginTop="06dp"
+                android:layout_height="wrap_content">
             <SearchView
                     android:id="@+id/search"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:layout_editor_absoluteY="31dp"
-                    android:queryHint="Procure seu projeto"
-                    tools:layout_editor_absoluteX="0dp"/>
+                    android:layout_marginTop="16dp"/>
 
         </android.support.constraint.ConstraintLayout>
 
