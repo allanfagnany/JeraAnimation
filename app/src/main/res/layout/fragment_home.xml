@@ -22,6 +22,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:layout_editor_absoluteY="31dp"
+                    android:iconifiedByDefault="false"
                     android:queryHint="Procure seu projeto"
                     tools:layout_editor_absoluteX="0dp"/>
 
