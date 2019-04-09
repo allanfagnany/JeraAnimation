@@ -13,8 +13,9 @@ class ViewHolderHome(private val binding: ItemHomeBinding) : RecyclerView.ViewHo
             ViewHolderHome(ItemHomeBinding.inflate(LayoutInflater.from(parent?.context), parent, false))
     }
 
-    fun format(project: Projects? = null) {
-        binding.project.text = project?.name
-        binding.body.text = project?.body
+    fun format(project: Projects, action: ((Projects) -> Unit?)? = null) {
+        binding.root.setOnClickListener { action?.invoke(project) }
+        binding.project.text = project.name
+        binding.body.text = project.body
     }
 }

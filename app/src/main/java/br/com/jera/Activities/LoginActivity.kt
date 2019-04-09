@@ -1,6 +1,6 @@
 package br.com.animation.Activities
 
-import android.content.Intent
+import  android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -33,18 +33,21 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setClickListeners() {
-        binding.buttonLogin.setOnClickListener { goToMain() }
+        binding.buttonLogin.setOnClickListener {
+            zoom()
+            goToMain()
+        }
     }
 
     private fun goToMain() {
-        Intent(this, MainActivity::class.java).run { zoomIn()
+        Intent(this, MainActivity::class.java).run {
             startActivity(this)
         }
     }
 
-    private fun zoomIn() {
-        AnimationUtils.loadAnimation(applicationContext, R.anim.zoom_in).run {
-            binding.linearLayoutLogin.startAnimation(this)
+    private fun zoom() {
+        AnimationUtils.loadAnimation(applicationContext, R.anim.zoom).run {
+            binding.buttonLogin.startAnimation(this)
         }
     }
 }

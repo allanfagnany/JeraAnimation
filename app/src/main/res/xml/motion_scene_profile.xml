@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+            motion:constraintSetStart="@layout/fragment_profile"
+            motion:constraintSetEnd="@layout/fragment_profile_end"
+            motion:duration="300">
+
+        <OnSwipe
+                motion:touchAnchorId="@id/about"
+                motion:touchAnchorSide="top"
+                motion:dragDirection="dragDown"/>
+
+    </Transition>
+</MotionScene>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.motion.MotionLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@drawable/background_home">
+
+    <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/color_white"
+            android:layout_height="1dp">
+
+        <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/avatar"/>
+
+        <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:text="@string/text_user_name"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:layout_gravity="center"
+                android:text="@string/text_user_email"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:background="@color/color_white">
+
+        <ImageView
+                android:id="@+id/brand_jera"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/ic_logo_jera_dark"/>
+
+        <TextView
+                android:id="@+id/about_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_black"
+                android:gravity="center"
+                android:text="@string/about"/>
+    </LinearLayout>
+</android.support.constraint.motion.MotionLayout>

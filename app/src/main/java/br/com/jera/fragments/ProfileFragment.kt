@@ -5,14 +5,14 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import br.com.animation.databinding.FragmentNotificationBinding
+import br.com.animation.databinding.FragmentProfileBinding
 
-class NotificationFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
-    lateinit var binding: FragmentNotificationBinding
+    lateinit var binding: FragmentProfileBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragmentNotificationBinding.inflate(inflater, container, false)
+        binding = FragmentProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

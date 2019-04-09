@@ -11,11 +11,14 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="br.com.animation.Activities.TutorialActivity"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="br.com.jera.Activities.ProjectDetailsActivity">
+        </activity>
         <activity
-                android:name="br.com.animation.Activities.SplashActivity"
+                android:name=".Activities.TutorialActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".Activities.SplashActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -25,11 +28,11 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="br.com.animation.Activities.LoginActivity"
+                android:name=".Activities.LoginActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.Status"/>
         <activity
-                android:name="br.com.animation.Activities.MainActivity"
+                android:name=".Activities.MainActivity"
                 android:label="@string/app_name"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.Status"/>

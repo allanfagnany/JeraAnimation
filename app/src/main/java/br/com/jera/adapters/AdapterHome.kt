@@ -7,8 +7,7 @@ import br.com.animation.databinding.ItemHomeBinding
 import br.com.jera.entities.Projects
 import br.com.jera.viewholders.ViewHolderHome
 
-class AdapterHome(private val projects: List<Any?>) :
-    RecyclerView.Adapter<ViewHolderHome>() {
+class AdapterHome(private val projects: List<Any?>, private val action: ((Projects) -> Unit?)? = null) : RecyclerView.Adapter<ViewHolderHome>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int) = ViewHolderHome(
         ItemHomeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -20,6 +19,6 @@ class AdapterHome(private val projects: List<Any?>) :
 
     override fun onBindViewHolder(holder: ViewHolderHome, position: Int) {
         val element = projects[position]
-        holder.format(element as? Projects)
+        holder.format(element as Projects, action)
     }
 }

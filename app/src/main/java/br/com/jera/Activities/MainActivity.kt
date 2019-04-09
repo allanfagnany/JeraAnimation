@@ -11,7 +11,7 @@ import br.com.animation.R
 import br.com.animation.databinding.ActivityMainBinding
 import br.com.animation.fragments.DashboardFragment
 import br.com.animation.fragments.HomeFragment
-import br.com.animation.fragments.NotificationFragment
+import br.com.animation.fragments.ProfileFragment
 import br.com.animation.util.FragmentType
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener{
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         when (item.itemId) {
             R.id.navigation_home -> changeFragment(FragmentType.HOME)
             R.id.navigation_dashboard -> changeFragment(FragmentType.DASHBOARD)
-            R.id.navigation_notifications -> changeFragment(FragmentType.NOTIFICATION)
+            R.id.navigation_profile -> changeFragment(FragmentType.NOTIFICATION)
         }
         return true
     }
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         return when (tag) {
             FragmentType.HOME -> HomeFragment()
             FragmentType.DASHBOARD -> DashboardFragment()
-            FragmentType.NOTIFICATION -> NotificationFragment()
+            FragmentType.NOTIFICATION -> ProfileFragment()
         }
     }
 }
